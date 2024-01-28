@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: Ecom.sln  # Replace with your solution name, e.g., MyWpfApp.sln
+      Solution_Name: Ecom.sln 
 
     steps:
     - name: Checkout
@@ -28,7 +28,7 @@ jobs:
     - name: Install .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 8.0.x
 
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
